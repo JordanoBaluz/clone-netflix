@@ -1,0 +1,47 @@
+/* abaixo são váriavel declaradas */
+:root{
+    --vermelho: #e50914;
+    --preto: #141414;
+}
+/* por padrão cada navegador joga um valor de padding e margin */
+/* por isso precisa ser feito um reset, que é o bloco abaixo */
+* {
+    margin: 0;
+    padding: 0;
+    /* o limite vai ser a borda da caixa para não sair da caixa */
+    box-sizing: border-box;
+}
+
+body {
+    background: var(--preto);
+    font-family: 'Times New Roman', Times, serif;
+}
+
+header .container{
+    /* utiliza flexbox para alinhar  */
+    display: flex;
+    /* por padrão vem como linhas */
+    flex-direction: row;
+    align-items: center;
+    /* trabalha como os elementos ficam na horizontal */
+    justify-content: space-between;
+}
+
+header .logo{
+    margin-left: 5px;
+    color: var(--vermelho);
+    font-family: 'Arial Black', Helvetica, sans-serif;
+    font-size: 40px;
+}
+
+header nav a{
+    /* retira as linhas de link */
+    text-decoration: none;
+    color: #aaa;
+    margin-right: 10px;
+}
+
+/* quando o mouse estiver em cima */
+header nav a:hover{
+    color: #fff;
+}
