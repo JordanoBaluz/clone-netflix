@@ -12,9 +12,12 @@
     box-sizing: border-box;
 }
 
+/* elementos base */
+
 body {
     background: var(--preto);
     font-family: 'Times New Roman', Times, serif;
+    color: whitesmoke;
 }
 
 header .container{
@@ -44,4 +47,54 @@ header nav a{
 /* quando o mouse estiver em cima */
 header nav a:hover{
     color: #fff;
+}
+
+/* tags dos filmes */
+.filme-principal{
+    font-size: 16px;
+    background: 
+    /* cria um efeito gradiente para ficar melhor a leitura do texto */
+    linear-gradient(rgba(0,0,0,.50),rgba(0,0,0,.100)),
+    url('/img/capa-house.jpg');
+    height: 400px;
+    background-size: cover;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    /* justify sempre segue a direção do flex */
+    align-items: flex-start;
+}
+
+/* div por padrao vem com display block e se um div pai tem display flex, porem uma div filha não for especificado, a div filha terá display block */
+
+.filme-principal .descricao {
+    margin-bottom: 40px;
+}
+
+.titulo{
+    /* posicionamento fluido utiliza percentual é o recomendado */
+    margin-top: 15%;
+    font-size: 40px;
+    font-family: 'Trebuchet MS', Arial, sans-serif;
+}
+
+.botao{
+    background-color: rgba(0, 0, 0, .50);
+    border: none;
+    color: seashell;
+    padding: 15px 30px;
+    margin-right: 15px;
+    font-size: 12px;
+    cursor: pointer;
+    transition: .3s ease all;
+}
+
+.botao:hover{
+    background-color: whitesmoke;
+    color: var(--preto);
+}
+
+.botao i{
+    margin-right: 7px;
 }
