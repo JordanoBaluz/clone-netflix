@@ -16,7 +16,7 @@
 
 body {
     background: var(--preto);
-    font-family: 'Times New Roman', Times, serif;
+    font-family: 'Arial', Times, serif;
     color: whitesmoke;
 }
 
@@ -90,11 +90,69 @@ header nav a:hover{
     transition: .3s ease all;
 }
 
+
+
 .botao:hover{
     background-color: whitesmoke;
     color: var(--preto);
 }
 
+.botao a{
+    text-decoration: none;
+    color: seashell;
+}
+
+.botao:hover a{
+    color: var(--preto);
+}
+
 .botao i{
     margin-right: 7px;
+}
+
+.container {
+    margin-left: 20px;
+}
+
+.filme-principal .container {
+    width: 70%;
+}
+
+/* configurações do carrosel */
+.box-filme{
+    height: 100%;
+    width: 100%;
+    display: block;
+}
+
+.item i{
+    position: absolute;
+    visibility: hidden;
+    transition: opacity .2s;
+    top: 50%;
+    left: 50%;
+    background-color: var(--preto);
+}
+
+.play{
+    position: absolute;
+    visibility: hidden;
+    opacity: 0.5;
+    transition: .2s;
+    top: 25%;
+    left: 10%;
+}
+
+.item:hover i{
+    visibility: visible;
+    opacity: 0.5;
+}
+
+.item:hover .play{
+    visibility: visible;
+    opacity: 0.6;
+}
+
+.carrosel-filmes{
+    margin-top: 5px;
 }

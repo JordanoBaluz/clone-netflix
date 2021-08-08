@@ -7,8 +7,12 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>CLONE NETFLIX</title>
     <link rel="stylesheet" href="./style/main.css">
-    <!-- site com icones para ser utilizado direto no html -->
-    <script src="https://kit.fontawesome.com/2c36e9b7b1.js"></script>
+    <!-- reponsividade -->
+    <link rel="stylesheet" href="style/responsive.css">
+    <!-- links do carrossel usando owl -->
+    <link rel="stylesheet" href="style/owl/owl.carousel.min.css">
+    <link rel="stylesheet" href="style/owl/owl.theme.default.min.css">
+
 </head>
 
 <body>
@@ -28,25 +32,75 @@
         <!-- div.umnome cria a tag com uma classe -->
         <!-- wrapper é a caixa que fará o papel de aumentar ou diminuir -->
         <div class="filme-principal">
-            <h3 class="titulo">House of card</h3>
-            <p class="descricao">
-                Num drama sobre as consequências do poder e da corrupção, Francis Underwood (Kevin
-                Spacey) está sedento por sucesso e nada o detém.
-            </p>
-            <!-- role especifica que é um botão independente de onde rederizar -->
-            <div class="botoes">
-                <button class="botao" role="button">
-                    <i class="fas fa-play"></i>
-                    assistir agora
-                </button>
-                <button class="botao">
-                    <i class="fas fa-info-circle"></i>
-                    mais informações
-                </button>
+            <div class="container">
+                <h3 class="titulo">House of card</h3>
+                <p class="descricao">
+                    Num drama sobre as consequências do poder e da corrupção, Francis Underwood (Kevin
+                    Spacey) está sedento por sucesso e nada o detém.
+
+                </p>
+                <!-- role especifica que é um botão independente de onde rederizar -->
+                <div class="botoes">
+                    <button class="botao" role="button">
+                        <i class="fas fa-play"></i>
+                        <a href="https://www.youtube.com/watch?v=8QnMmpfKWvo" target="_blank">
+                            assistir agora
+                        </a>
+                    </button>
+                    <button class="botao">
+                        <i class="fas fa-info-circle"></i>
+                        <a href="https://www.themoviedb.org/tv/1425-house-of-cards?language=pt-BR" target="_blank">mais
+                            informações</a>
+                    </button>
+                </div>
             </div>
         </div>
     </main>
 
+    <div class="carrosel-filmes">
+        <div class="owl-carousel owl-theme">
+            <div class="item">
+                <div class="play">
+                    <a href="https://www.youtube.com/watch?v=5_4SW8HHfUs" target="_blank">
+                        <img src="img/play-circle-regular.svg" alt="" srcset="">
+                    </a>
+                </div>
+                <img class="box-filme" src="img/mini1.jpg" alt="" srcset="">
+            </div>
+            <div class="item">
+                <div class="play">
+                    <a href="http://www.youtube.com/watch?v=W0squnw6Jp8" target="_blank">
+                        <img src="img/play-circle-regular.svg" alt="" srcset="">
+                    </a>
+                </div>
+                <img class="box-filme" src="img/mini2.jpg" alt="" srcset="">
+            </div>
+            <div class="item">
+                <img class="box-filme" src="img/mini3.jpg" alt="" srcset="">
+            </div>
+            <div class="item">
+                <img class="box-filme" src="img/mini4.jpg" alt="" srcset="">
+            </div>
+            <div class="item">
+                <img class="box-filme" src="img/mini5.jpg" alt="" srcset="">
+            </div>
+            <div class="item">
+                <img class="box-filme" src="img/mini6.jpg" alt="" srcset="">
+            </div>
+            <div class="item">
+                <img class="box-filme" src="img/mini7.jpg" alt="" srcset="">
+            </div>
+        </div>
+
+    </div>
+
+    <!-- só funciona se estiver declarado aqui no final, se os scripts estiverem no head não irá funcionar o carrosel -->
+    <!-- scrips do carrossel usando owl -->
+    <script src="js/jquery.min.js"></script>
+    <script src="js/owl.carousel.min.js"></script>
+    <script src="js/setup.js"></script>
+    <!-- site com icones para ser utilizado direto no html -->
+    <script src="https://kit.fontawesome.com/2c36e9b7b1.js"></script>
 </body>
 
 </html>
