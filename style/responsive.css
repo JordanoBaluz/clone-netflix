@@ -7,6 +7,15 @@
     .botao{
         margin-top: 5px;
     }
+
+    .play{
+        position: absolute;
+        visibility: hidden;
+        opacity: 0.5;
+        transition: .2s;
+        top: 35%;
+        left: 25%;
+    }
 }
 
 @media screen and (min-width: 1000px){

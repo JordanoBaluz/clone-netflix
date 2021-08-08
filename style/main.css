@@ -30,6 +30,10 @@ header .container{
     justify-content: space-between;
 }
 
+header nav{
+    margin-right: 25px;
+}
+
 header .logo{
     margin-left: 5px;
     color: var(--vermelho);
@@ -90,8 +94,6 @@ header nav a:hover{
     transition: .3s ease all;
 }
 
-
-
 .botao:hover{
     background-color: whitesmoke;
     color: var(--preto);
@@ -119,21 +121,19 @@ header nav a:hover{
 }
 
 /* configurações do carrosel */
+.carrosel{
+    margin-bottom: 0px;
+}
+.carrosel p{
+    margin: 10px 20px;
+}
 .box-filme{
     height: 100%;
     width: 100%;
     display: block;
 }
 
-.item i{
-    position: absolute;
-    visibility: hidden;
-    transition: opacity .2s;
-    top: 50%;
-    left: 50%;
-    background-color: var(--preto);
-}
-
+/* configurações botao play nas miniaturas */
 .play{
     position: absolute;
     visibility: hidden;
@@ -141,11 +141,6 @@ header nav a:hover{
     transition: .2s;
     top: 25%;
     left: 10%;
-}
-
-.item:hover i{
-    visibility: visible;
-    opacity: 0.5;
 }
 
 .item:hover .play{
